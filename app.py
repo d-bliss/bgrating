@@ -69,11 +69,11 @@ def generate_graph(v2_rating_user=None, v1_rating_user=None, user_title=None):
             font=dict(size=24, color='#3b5998')
         ),
         xaxis=dict(
-            title="V2 Rating",
+            title="V1 Rating",
             dtick=200,
             tickformat=".2f"
         ),
-        yaxis_title="V1 Rating",
+        yaxis_title="V2 Rating",
         hovermode="x",
         dragmode=False,
         uirevision=True,
