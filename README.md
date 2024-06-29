@@ -61,6 +61,48 @@ While developing, you can make use of VSCode’s features like debugging, Git in
 
 Remember to test your changes thoroughly locally before deploying them to PythonAnywhere or any other hosting platform.
 
+## Data Used
+
+| Title                        | New Rating | Old Rating | Original Rating |
+|------------------------------|------------|------------|-----------------|
+| Galactic Master Level 3      | 3500       | 2600       |                 |
+| Galactic Master Level 2      | 3250       | 2500       |                 |
+| Galactic Master Level 1      | 3000       | 2400       | 3512            |
+| Grandmaster Level 3          | 2700       | 2300       |                 |
+| Grandmaster Level 2          | 2500       | 2200       |                 |
+| Grandmaster Level 1          | 2350       | 2100       | 2841            |
+| International Master Level 3 | 2250       | 2000       |                 |
+| International Master Level 2 | 2150       | 1950       |                 |
+| International Master Level 1 | 2050       | 1900       | 2394            |
+| Master Level 3               | 1950       | 1870       |                 |
+| Master Level 2               | 1850       | 1830       |                 |
+| Master Level 1               | 1750       | 1800       | 2171            |
+| Advanced Level 3             | 1700       | 1750       |                 |
+| Advanced Level 2             | 1650       | 1700       |                 |
+| Advanced Level 1             | 1600       | 1650       | 1835            |
+| Intermediate Level 6         | 1567       | 1530       |                 |
+| Intermediate Level 5         | 1533       | 1515       |                 |
+| Intermediate Level 4         | 1500       | 1475       |                 |
+| Intermediate Level 3         | 1467       | 1450       |                 |
+| Intermediate Level 2         | 1433       | 1425       |                 |
+| Intermediate Level 1         | 1400       | 1400       |                 |
+| Rookie Level 9               | 1367       | 1367       |                 |
+| Rookie Level 8               | 1333       | 1333       |                 |
+| Rookie Level 7               | 1300       | 1300       |                 |
+| Rookie Level 6               | 1267       | 1267       |                 |
+| Rookie Level 5               | 1233       | 1233       |                 |
+| Rookie Level 4               | 1200       | 1200       |                 |
+| Rookie Level 3               | 1167       | 1167       |                 |
+| Rookie Level 2               | 1133       | 1133       |                 |
+| Rookie Level 1               | 1100       | 1100       |                 |
+| Beginner Level 6             | 1067       | 1067       |                 |
+| Beginner Level 5             | 1033       | 1033       |                 |
+| Beginner Level 4             | 1000       | 1000       |                 |
+| Beginner Level 3             | 967        | 967        |                 |
+| Beginner Level 2             | 933        | 933        |                 |
+| Beginner Level 1             | 900        | 900        |                 |
+
+
 ## License
 
 This project is [MIT licensed](LICENSE).

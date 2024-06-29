@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Backgammon Galaxy V2 to V1 Rating Conversion</title>
+    <title>Backgammon Galaxy Rating Conversion: New to Original</title>
     <link rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
-            background-color: rgba(229, 229, 247, 0.2); /* light lavender with 20% opacity */
-            background-image: linear-gradient(rgba(68, 76, 247, 0.2) 0.9px, transparent 0.9px), linear-gradient(to right, rgba(68, 76, 247, 0.2) 0.9px, rgba(229, 229, 247, 0.2) 0.9px);
+            background-color: rgba(229, 229, 247, 0.2);
+            background-image: linear-gradient(rgba(68, 76, 247, 0.2) 0.9px, transparent 0.9px),
+                linear-gradient(to right, rgba(68, 76, 247, 0.2) 0.9px, rgba(229, 229, 247, 0.2) 0.9px);
             background-size: 18px 18px;
         }
-
 
         header {
             background: #3b5998;
@@ -38,10 +38,9 @@
         }
 
         .conversion-info {
-            font-weight: bold;  /* Makes the text bold */
-            font-size: 16px;    /* Adjust the font size as per your preference */
+            font-weight: bold;
+            font-size: 16px;
         }
-
 
         a {
             color: #3b5998;
@@ -56,32 +55,29 @@
         .conversion-form label {
             display: inline-block;
             font-weight: bold;
-            /* Make the text bolder */
             vertical-align: middle;
-            /* Align it with the input area */
         }
 
         .conversion-form input {
             display: inline-block;
             margin-bottom: 10px;
-            /* Add some margin for a cleaner look */
         }
 
         .conversion-form button {
             display: block;
-            margin: auto; /* Center the button */
-            font-size: 16px; /* Adjusted font size */
-            padding: 12px 24px; /* Adjusted padding */
-            border-radius: 8px; /* Added rounded corners */
-            background-color: #3b5998; /* Background color matching the header */
-            color: #ffffff; /* Text color */
-            border: none; /* Remove border */
-            cursor: pointer; /* Change cursor to pointer on hover */
-            transition: background-color 0.3s; /* Smooth transition for hover effect */
+            margin: auto;
+            font-size: 16px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            background-color: #3b5998;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
 
         .conversion-form button:hover {
-            background-color: #4a69a8; /* Slightly lighter shade for hover */
+            background-color: #4a69a8;
         }
 
         .conversion-form {
@@ -98,28 +94,26 @@
 
 <body>
     <header>
-        <h1><a href="/" style="text-decoration: none; color: white;">Backgammon
-                Galaxy V2 to V1 Rating Conversion</a></h1>
+        <h1><a href="/" style="text-decoration: none; color: white;">Backgammon Galaxy Rating Conversion: New to Original</a></h1>
     </header>
     <div id="container" class="container">
         <div class="conversion-form">
             <form action="/convert" method="post">
-                <label for="v1_rating">Enter V2 Rating: </label>
-                <input type="text" id="v1_rating" name="v1_rating" size="10"
-                    required>
+                <label for="current_rating">Enter Current Rating: </label>
+                <input type="text" id="current_rating" name="current_rating"
+                    size="10" required>
                 <button type="submit"
                     class="btn btn-primary btn-sm">Convert</button>
             </form>
         </div>
-        {% if v1_rating and v2_rating %}
+        {% if current_rating and original_rating %}
         <div class="conversion-result alert alert-info alert-dismissible fade show"
-            role="alert"> <!-- Added alert-dismissible fade show classes -->
-            Your entered V2 Rating of {{ v2_rating }} converts to an equivalent V1 Rating of
-            {{ v1_rating }}
-
-            <!-- Removed '%.2f'|format -->
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&#215;</span> <!-- or use 'Close' -->
+            role="alert">
+            Your current rating of {{ current_rating }} converts to an
+            equivalent Original Galaxy rating of {{ original_rating }}
+            <button type="button" class="close" data-dismiss="alert"
+                aria-label="Close">
+                <span aria-hidden="true">&#215;</span>
             </button>
         </div>
         {% endif %}
@@ -127,13 +121,14 @@
             {{ graph_html|safe }}
         </div>
         <div class="info">
-            <p><span class="conversion-info">The conversions are based on ratings from
-                    <a href="https://www.backgammongalaxy.com/"
+            <p><span class="conversion-info">The conversions are based on
+                    ratings from
+                    <a href="https://www.backgammongalaxy.com/backgammon-galaxy-blog/new-rating-titles-on-bg-galaxy"
                         target="_blank">Backgammon Galaxy.</a></span></p>
         </div>
     </div>
     <footer>
-        <p>&copy; {{ year }} <a href="https://github.com/d-bliss"
+        <p>&copy; 2023 <a href="https://github.com/d-bliss"
                 target="_blank">Bliss</a></p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
